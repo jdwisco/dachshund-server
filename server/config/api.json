@@ -1,0 +1,5 @@
+{
+  "name": "Dachshund API",
+  "version": "v1",
+  "description": "Shuttle data between client and server"
+}

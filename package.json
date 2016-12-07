@@ -1,0 +1,33 @@
+{
+  "name": "dachshund-server",
+  "version": "1.0.0",
+  "description": "API for Home Dashboard Dachshund",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "PORT=8000 nodemon -L --debug",
+    "debugger": "node-inspector --web-port=3000",
+    "test": "test"
+  },
+  "author": "Alex Sheehan <alex.m.sheehan@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^5.8.21",
+    "babel-cli": "^6.16.0",
+    "body-parser": "^1.13.3",
+    "chai": "^3.5.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "lodash": "^4.11.1",
+    "morgan": "^1.7.0",
+    "node-inspector": "^0.12.8",
+    "nodemon": "^1.9.2",
+    "resource-router-middleware": "^0.5.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "nodejs-dashboard": "^0.1.0"
+  }
+
+}

@@ -1,0 +1,6 @@
+---
+- hosts: all
+  roles:
+    - webserver
+  vars_files:
+    - group_vars/webservers

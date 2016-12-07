@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www/dachshund-server":{"guestpath":"/var/www/dachshund-server","hostpath":"/Users/alexsheehan/Developer/dachshund-server","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/alexsheehan/Developer/dachshund-server","disabled":false,"__vagrantfile":true}}}

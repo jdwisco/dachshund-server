@@ -1,0 +1,31 @@
+---
+- name: Install Environment Packages
+  become: yes
+  apt: pkg={{ item }} state=installed update_cache=yes
+  with_items:
+    - git-core
+    - wget
+    - curl
+
+- name: Copy bashrc
+  become: yes
+  copy: src=bashrc dest=/home/vagrant/.bashrc owner=root
+
+- name: Download NodeJS
+  become: yes
+  shell: 'curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -'
+
+- name: Install NodeJS
+  become: yes
+  shell: 'apt-get install -y nodejs'
+
+- name: Install Gulp and Nodemon 
+  become: yes
+  npm: name={{item}} path=/opt/site global=yes
+  with_items:
+    - gulp-cli
+    - nodemon
+
+- name: Install Dependencies 
+  become: yes
+  npm: path={{ app_path }}

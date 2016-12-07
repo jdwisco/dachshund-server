@@ -1,0 +1,4 @@
+cd /var/www/dachshund-server
+
+export DARKSKY_KEY='f75fa863e89325f3e92bd21a6fa32dcb'
+export SECRET_KEY='rnp-ir#8;v$2:~7B.TWvtUv3CcMe*RJ{lt]#XaIY|e9.5G8E4Pvu8gn$'
