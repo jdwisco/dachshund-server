@@ -32,6 +32,13 @@ $ vagrant ssh
 $ npm run dev
 ```
 
+Once you're done working, suspend the vagrant box
+
+```
+$ logout
+$ vagrant suspend
+```
+
 ### Deploy
 
 ```
