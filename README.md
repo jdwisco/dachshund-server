@@ -6,7 +6,7 @@ A sweet little dachshboard buddy for your morning prep.
 
 - ES6 support via [babel](https://babeljs.io)
 - Provisioning via [Vagrant](https://www.vagrantup.com/) & [Ansible](https://www.ansible.com/)
-- Database Flavor is [PostgreSQL](https://www.postgresql.org/)
+- Database Flavor is [PostgreSQL](https://www.postgresql.org/). Install using homebrew `brew install postgresql`
 - ORM is [Bookshelf](http://bookshelfjs.org/)
 
 ## Develop

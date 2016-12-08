@@ -7,6 +7,7 @@ import middleware from './middleware';
 
 // Route imports
 import api from './controllers';
+import users from './controllers/users';
 import weather from './controllers/weather';
 
 let app = express();
@@ -27,6 +28,7 @@ app.use(middleware());
 
 // API
 app.use(`/api`, api());
+app.use('/users/', users());
 app.use(`/api/weather`, weather());
 
 // Server

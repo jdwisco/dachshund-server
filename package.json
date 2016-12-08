@@ -7,7 +7,8 @@
     "start": "node index.js",
     "dev": "PORT=8000 nodemon -L --debug",
     "debugger": "node-inspector --web-port=3000",
-    "test": "test"
+    "test": "test",
+    "migrate": "knex migrate:latest"
   },
   "author": "Alex Sheehan <alex.m.sheehan@gmail.com>",
   "license": "ISC",
@@ -15,19 +16,22 @@
     "babel": "^5.8.21",
     "babel-cli": "^6.16.0",
     "body-parser": "^1.13.3",
+    "bookshelf": "^0.10.2",
     "chai": "^3.5.0",
     "cors": "^2.7.1",
     "express": "^4.13.3",
+    "knex": "^0.12.6",
     "lodash": "^4.11.1",
     "morgan": "^1.7.0",
     "node-inspector": "^0.12.8",
     "nodemon": "^1.9.2",
+    "pg": "^6.1.0",
     "resource-router-middleware": "^0.5.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.5.3",
-    "nodejs-dashboard": "^0.1.0"
+    "nodejs-dashboard": "^0.1.0",
+    "sqlite3": "^3.1.8"
   }
-
 }
