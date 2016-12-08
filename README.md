@@ -1,4 +1,39 @@
-Dachshund Server
-============================
+## Dachshund Server
+
+A sweet little dachshboard buddy for your morning prep.
+
+## Stack
+
 - ES6 support via [babel](https://babeljs.io)
 - Provisioning via [Vagrant](https://www.vagrantup.com/) & [Ansible](https://www.ansible.com/)
+- Database Flavor is [PostgreSQL](https://www.postgresql.org/)
+- ORM is [Bookshelf](http://bookshelfjs.org/)
+
+## Develop
+
+Clone the repository, then
+
+```
+$ npm install
+```
+
+## Usage
+
+- [Run](#run)
+- [Deploy](#deploy)
+
+### Run
+
+Once you have installed the dependencies, you can use the following to run a development server.
+
+```
+$ vagrant up
+$ vagrant ssh
+$ npm run dev
+```
+
+### Deploy
+
+```
+$ heroku push master
+```
